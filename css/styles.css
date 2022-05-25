@@ -1,0 +1,33 @@
+body {
+    /* font-family */
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown
+}
+
+#text {
+    color: violet;
+}
+
+* {
+    color: brown;
+}
+
+p {
+    color: green;
+}
+[href] {
+    color: teal;
+}
+[href="./index.html" ] {
+    color: purple;
+}
+
+.header > a {
+    color: blue;
+}
+
+body 
+/* Селектори
+Універсальний
+Тег
+ID */
