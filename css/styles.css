@@ -1,3 +1,8 @@
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
 :root {
   --header-color: #ffffff;
   --main-btn-color: #ffffff;
@@ -5,10 +10,6 @@
   --main-title-color: #ffffff;
   --second-btn-color: #303030;
   --accent-color: brown;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
 }
 
 .header-item {
