@@ -12,51 +12,59 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <style>
       ul {
         list-style-type: none; /* Убираем маркеры */
       }
       a {
-        text-decoration: none; /* Убираем подчеркивания в ссылках */
+        text-decoration: none; /* Убираем подчеркивание в ссылках  */
       }
     </style>
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <!-- header -->
+    <header class="header-link">
       <nav>
         <a href="./index.html" class="header-logo"
-          ><span class="header-logo-first">Web</span>Studio</a
-        >
-        <ul class="header-links">
-          <li><a href="" class="header-links-item header-text">Студия</a></li>
-          <li>
-            <a href="" class="header-links-item header-text">Портфолио</a>
+          ><span class="header-logo-first">Web</span>Studio
+        </a>
+        <ul class="header-list">
+          <li class="header-item">
+            <a href="./index.html" class="header-item-link header-text"
+              >Студия</a
+            >
           </li>
-          <li><a href="" class="header-links-item header-text">Контакты</a></li>
+          <li class="header-item">
+            <a href="./portfolio.html" class="header-item-link header-text"
+              >Портфолио</a
+            >
+          </li>
+          <li class="header-item">
+            <a href="" class="header-item-link header-text">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <ul class="header-contacts">
-        <li class="header-contacts-list">
+      <ul>
+        <li>
           <a
             href="mailto:info@devstudio.com"
             title="E-mail"
-            class="header-contact-link header-text"
+            class="header-link header-text"
             >info@devstudio.com</a
           >
         </li>
-        <li class="header-contacts-list">
+        <li>
           <a
             href="tel:+380961111111"
-            title="Mobile number"
-            class="header-contact-link header-text"
+            title="Mobile phone"
+            class="header-link header-text"
             >+38 096 111 11 11</a
           >
         </li>
       </ul>
     </header>
-    <!-- Main -->
+    <!-- main -->
     <main>
       <section class="main-box">
         <h1 class="main" title="Эффективные решения для вашего бизнеса">
@@ -141,11 +149,12 @@
         </ul>
       </section>
     </main>
-    <!-- Footer -->
+    <!-- footer -->
     <footer>
       <a href="./index.html" class="footer-logo"
         ><span class="footer-logo-first">Web</span>Studio
       </a>
+
       <address>
         <ul class="contacts">
           <li>
