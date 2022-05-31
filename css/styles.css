@@ -20,6 +20,17 @@ a::before {
   /* content: url(../images/icons8-твиттер-48.png); */
 }
 
+.header-logo:hover {
+  display: inline;
+  content: "";
+  width: 34px;
+  height: 34px;
+  background: url(../images/icons8-твиттер.gif);
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 :root {
   --main-color: #212121;
   --highlight-color: #2196f3;
