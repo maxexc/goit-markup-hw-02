@@ -9,7 +9,8 @@ a::before {
 
 .header-logo::before,
 .footer-logo::before {
-  content: url(/images/icons8-твиттер-48.png);
+  background-image: url(https://img.icons8.com/color/16/000000/twitter--v1.png);
+  /* content: url(/images/icons8-твиттер-48.png); */
 }
 :root {
   --main-color: #212121;
