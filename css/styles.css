@@ -20,17 +20,6 @@ a::before {
   /* content: url(../images/icons8-твиттер-48.png); */
 }
 
-.header-logo:hover {
-  display: inline;
-  content: "";
-  width: 34px;
-  height: 34px;
-  background: url(../images/icons8-твиттер.gif);
-  background-size: cover;
-  vertical-align: middle;
-  margin-right: 4px;
-}
-
 :root {
   --main-color: #212121;
   --highlight-color: #2196f3;
@@ -59,6 +48,15 @@ a::before {
 .header-logo-first,
 .footer-logo-first {
   color: #2196f3;
+}
+
+.header-logo:hover.header-logo::before,
+.footer-logo:hover.footer-logo::before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background-image: url(../images/icons8-твиттер.gif);
 }
 
 .header-text {
