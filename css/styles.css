@@ -7,6 +7,8 @@ a::before {
   content: url(../images/icons8-твиттер-16.png);
 }
 
+/* animation logo */
+
 .header-logo::before,
 .footer-logo::before {
   content: "";
@@ -17,7 +19,6 @@ a::before {
   background-size: cover;
   vertical-align: middle;
   margin-right: 4px;
-  /* content: url(../images/icons8-твиттер-48.png); */
 }
 
 :root {
@@ -49,6 +50,8 @@ a::before {
 .footer-logo-first {
   color: #2196f3;
 }
+
+/* animation logo */
 
 .header-logo:hover.header-logo::before,
 .footer-logo:hover.footer-logo::before {
