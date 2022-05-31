@@ -4,10 +4,13 @@ body {
 }
 
 a::before {
-  content: "♥️";
-  color: brown;
+  content: url(/images/icons8-твиттер-16.png);
 }
 
+.header-logo::before,
+.footer-logo::before {
+  content: url(/images/icons8-твиттер-48.png);
+}
 :root {
   --main-color: #212121;
   --highlight-color: #2196f3;
