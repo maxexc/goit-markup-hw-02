@@ -4,7 +4,7 @@ body {
 }
 
 a::before {
-  content: url(./images/icons8-твиттер-16.png);
+  content: url(https://img.icons8.com/color/16/000000/twitter--v1.png);
 }
 
 .header-logo::before,
