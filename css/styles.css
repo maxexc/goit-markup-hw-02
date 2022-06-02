@@ -10,23 +10,61 @@ body {
 } */
 
 /* птички твиттер перед ссылками */
- a::before {
-  content: url(../images/icons8-твиттер-16.png);
-} 
+a::before {
+  content: url(../images/icons8-twitter-16.svg);
+  vertical-align: middle;
+}
 
 /* animation logo */
 
- .header-logo::before,
+.header-logo::before,
 .footer-logo::before {
   content: "";
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   display: inline-block;
-  background: url(../images/icons8-твиттер-48.png);
+  background: url(../images/icons8-twitter.svg);
   background-size: cover;
   vertical-align: middle;
   margin-right: 4px;
-} 
+}
+
+/* animation logo */
+
+.header-logo:hover.header-logo::before,
+.footer-logo:hover.footer-logo::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-image: url(../images/icons8-twitter.gif);
+}
+
+/* Сброс стилей / Reset styles */
+
+p,
+h1,
+h2,
+h3,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: currentColor;
+}
+address {
+  text-decoration: none;
+}
+/* Сброс стилей / Reset styles */
 
 :root {
   --main-color: #212121;
@@ -40,11 +78,12 @@ body {
   --footer-contact-color: #ffffff;
   --portfolio-speciality-color: #757575;
   --portfolio-contact-e: rgba(255, 255, 255, 0.6);
+  --typical-margin: 30px;
 }
 
 .container {
-  width 1200px;
-  padding: 0 15px;  
+  width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
 }
@@ -64,17 +103,6 @@ body {
 .header-logo-first,
 .footer-logo-first {
   color: #2196f3;
-}
-
-/* animation logo */
-
-.header-logo:hover.header-logo::before,
-.footer-logo:hover.footer-logo::before {
-  content: "";
-  width: 34px;
-  height: 34px;
-  display: inline-block;
-  background-image: url(../images/icons8-твиттер.gif);
 }
 
 .header-text {
@@ -109,6 +137,10 @@ body {
 
 /* main */
 
+.main-box {
+  background-color: var(--main-background-color);
+}
+
 .main {
   font-weight: 900;
   font-size: 44px;
@@ -117,7 +149,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-tittle-color);
-  background: var(--main-background-color);
+  max-width: 696px;
+  padding: 200px 252px 30px 252px;
 }
 
 .main-btn {
@@ -137,6 +170,11 @@ body {
   margin: 0 auto;
   display: block;
   /* выровнять кнопку по центру */
+  width: 200px;
+  height: 50px;
+}
+.div-btn {
+  padding-bottom: 200px;
 }
 
 .main-btn:hover,
@@ -174,6 +212,19 @@ h1[class="visually-hidden"] {
   margin: -1px;
 }
 
+.description-list {
+  padding: 94px 0;
+  display: flex;
+}
+.description-block {
+  width: 270px;
+  margin-right: var(--typical-margin);
+  display: inline-block;
+}
+.last {
+  margin-right: 0;
+}
+
 .description {
   font-weight: 700;
   font-size: 14px;
@@ -198,6 +249,11 @@ h1[class="visually-hidden"] {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+
+.works {
+  padding-bottom: 50px;
+}
+
 .name {
   font-weight: 500;
   font-size: 16px;
