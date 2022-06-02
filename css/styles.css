@@ -3,13 +3,20 @@ body {
   color: #212121;
 }
 
-a::before {
+/* Сердечки перед ссылками */
+/* a::before {
+  content: "♥️";
+  color: brown;
+} */
+
+/* птички твиттер перед ссылками */
+ a::before {
   content: url(../images/icons8-твиттер-16.png);
-}
+} 
 
 /* animation logo */
 
-.header-logo::before,
+ .header-logo::before,
 .footer-logo::before {
   content: "";
   width: 34px;
@@ -19,7 +26,7 @@ a::before {
   background-size: cover;
   vertical-align: middle;
   margin-right: 4px;
-}
+} 
 
 :root {
   --main-color: #212121;
@@ -33,6 +40,13 @@ a::before {
   --footer-contact-color: #ffffff;
   --portfolio-speciality-color: #757575;
   --portfolio-contact-e: rgba(255, 255, 255, 0.6);
+}
+
+.container {
+  width 1200px;
+  padding: 0 15px;  
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 /* header */
