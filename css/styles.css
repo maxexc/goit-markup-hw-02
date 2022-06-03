@@ -45,9 +45,7 @@ a::before {
 p,
 h1,
 h2,
-h3,
-li,
-img {
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -55,7 +53,6 @@ ul {
   margin: 0;
   padding-left: 0;
 }
-
 a {
   color: currentColor;
 }
@@ -77,13 +74,6 @@ address {
   --portfolio-speciality-color: #757575;
   --portfolio-contact-e: rgba(255, 255, 255, 0.6);
   --typical-margin: 30px;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  outline: 1px solid red;
 }
 
 /* header */
@@ -135,10 +125,6 @@ address {
 
 /* main */
 
-.main-box {
-  background-color: var(--main-background-color);
-}
-
 .main {
   font-weight: 900;
   font-size: 44px;
@@ -147,8 +133,7 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-tittle-color);
-  max-width: 696px;
-  padding: 200px 252px 30px 252px;
+  background: var(--main-background-color);
 }
 
 .main-btn {
@@ -168,11 +153,6 @@ address {
   margin: 0 auto;
   display: block;
   /* выровнять кнопку по центру */
-  width: 200px;
-  height: 50px;
-}
-.div-btn {
-  padding-bottom: 200px;
 }
 
 .main-btn:hover,
@@ -208,19 +188,6 @@ h1[class="visually-hidden"] {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.description-list {
-  padding: 94px 0;
-  display: flex;
-}
-.description-block {
-  width: 270px;
-  margin-right: var(--typical-margin);
-  display: inline-block;
-}
-.last {
-  margin-right: 0;
 }
 
 .description {
